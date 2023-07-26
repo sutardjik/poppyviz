@@ -9,7 +9,7 @@ import io
 
 def set_favicon():
     favicon_path = "./favicon.ico"
-    st.set_page_config(page_title="Kenya · PopPyViz", page_icon=favicon_path)
+    st.set_page_config(page_title="Kenya · PopPyraViz", page_icon=favicon_path)
 
 
 set_favicon()
