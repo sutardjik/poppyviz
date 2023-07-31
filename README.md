@@ -1,8 +1,6 @@
 # PopPyraViz
 
-An interactive website that visualizes the population trends of six countries from 1950 to 2020 using population pyramids and annual growth line graphs. It offers users an engaging and informative way to explore demographic changes, providing interactive sliders for specific years and access to linked data sources for additional context.
-
-Written in Python, HTML, and CSS using the Streamlit framework.
+An interactive website using the Streamlit framework that visualizes the population trends of six countries from 1950 to 2020 using population pyramids and annual growth line graphs. It offers users an engaging and informative way to explore demographic changes, providing interactive sliders for specific years and access to linked data sources for additional context.
 
 ## Home
 
