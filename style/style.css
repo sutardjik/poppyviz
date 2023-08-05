@@ -27,13 +27,20 @@ body {
 a {
   color: #FFFFFF !important;
   text-decoration: none;
+  transition: .3s;
 }
 
 a:hover{
+  background: none;
   color: #B3CEE5 !important;
   text-decoration: none;
-  transition: .3s;
   cursor: pointer;
+}
+
+.link a:hover{
+  background: #B3CEE5;
+  color: #363845 !important;
+  text-decoration: none;
 }
 
 hr {

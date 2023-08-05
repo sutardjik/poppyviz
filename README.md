@@ -31,7 +31,7 @@ An interactive website using the Streamlit framework that visualizes the populat
 
 ## Dependencies
 
-- [Pandas](https://pandas.pydata.org/) (version 1.5.3): a powerful data manipulation and analysis library
+- [Pandas](https://pandas.pydata.org/) (version 1.5.3): a powerful data manipulation and analysis library for rendering interactive dataframes
 - [Plotly](https://plotly.com/python/) (version 5.13.0): a flexible and interactive visualization library, including Plotly Express for high-level visualizations
 - [XlsxWriter](https://xlsxwriter.readthedocs.io/) (version 3.0.8): a Python library for creating Excel files
 - [Pydeck](https://github.com/visgl/deck.gl/): a Python library for rendering Mapbox maps and creating interactive 3D visualizations

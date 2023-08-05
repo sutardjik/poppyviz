@@ -216,7 +216,7 @@ st.write("---")
 add_vertical_space(1)
 
 st.markdown(
-    f"""<p style='text-align:center;'>Built by <a href="https://sutardjik.github.io/" class="link" target="_blank">&#x4b;&#x61;&#x72;&#x65;&#x6e;
+    f"""<p class="link" style='text-align:center;'>Built by <a href="https://sutardjik.github.io/" target="_blank">&#x4b;&#x61;&#x72;&#x65;&#x6e;
             &#x53;&#x75;&#x74;&#x61;&#x72;&#x64;&#x6a;&#x69;</a></p>""",
     unsafe_allow_html=True,
 )
@@ -250,8 +250,8 @@ st.markdown(
 )
 
 st.sidebar.write(
-    f"""<h1 style="font-weight: 300">Preface</h1><p>
-    PopPyraViz presents the population trends of six countries—the USA, Brazil, Germany, Kenya, India, and Japan—with population pyramids illustrated across 70 years. The annual population growth of the six countries from the same year interval is featured as line graphs. The population pyramids and population growth data are shown as interactive dataframes that can be downloaded as Excel spreadsheets and queried by column name. The annual population growth of the six countries is expressed as a multiple-line graph with the data displayed in an interactive data frame, all examined in the <a href="/COUNTRY_COMPARISON" target="_self">Country Comparison</a> section.</p>
+    f"""<h1 style="font-weight: 300">Preface</h1><p class="link">
+    PopPyraViz presents the population trends of six countries—the USA, Brazil, Germany, Kenya, India, and Japan—with population pyramids illustrated across 70 years. The annual population growth of the six countries from the same year interval is featured as line graphs. The population pyramids and population growth data are shown as interactive dataframes that can be downloaded as Excel spreadsheets and queried by column name. The annual population growth of the six countries is expressed as a multiple-line graph with the data displayed in an interactive dataframe, all examined in the <a href="/COUNTRY_COMPARISON" target="_self">Country Comparison</a> section.</p>
     """,
     unsafe_allow_html=True,
 )
