@@ -39,9 +39,20 @@ An interactive website using the Streamlit framework that visualizes the populat
 
 For more information and documentation about these libraries, please refer to their respective websites or official documentation.
 
-## Development Mode
+## Development
 
-- Ensure Python 3.10 is installed
-- To install Streamlit: `$ pip install streamlit`
-- Check Streamlit version: `$ streamlit --version`
-- To run the app in the project directory: `$ streamlit run HOME.py`
+```bash
+# ensure python 3.10 is installed
+# clone repository
+git clone https://github.com/sutardjik/poppyraviz.git
+cd poppyraviz
+
+# install streamlit
+pip install streamlit
+
+# check streamlit version
+streamlit --version
+
+# run the app
+streamlit run HOME.py
+```
