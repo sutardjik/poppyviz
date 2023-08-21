@@ -43,7 +43,7 @@ For more information and documentation about these libraries, please refer to th
 
 ```bash
 # ensure python 3.10 is installed
-# clone repository
+# clone project
 git clone https://github.com/sutardjik/poppyraviz.git
 cd poppyraviz
 
