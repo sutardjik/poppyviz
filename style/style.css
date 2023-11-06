@@ -15,12 +15,12 @@ h1, h4, h5 {
 }
 
 p {
-  font-family: adelle-sans;
+  font-family: adelle-sans, sans-serif;
   font-weight: 400;
 }
 
 body {
-  font-family: acumin-pro-wide;
+  font-family: acumin-pro-wide, sans-serif;
   font-weight: 600;
 }
 
