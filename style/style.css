@@ -10,17 +10,17 @@
 }
 
 h1, h4, h5 {
-  font-family: ivypresto-display, serif;
+  font-family: ivypresto-display;
   font-weight: 300;
 }
 
 p {
-  font-family: adelle-sans, sans-serif;
+  font-family: adelle-sans;
   font-weight: 400;
 }
 
 body {
-  font-family: acumin-pro-wide, sans-serif;
+  font-family: acumin-pro-wide;
   font-weight: 600;
 }
 
@@ -34,7 +34,7 @@ a:hover{
   background: none;
   color: #B3CEE5 !important;
   text-decoration: none;
-  cursor: pointer;
+  cursor: alias;
 }
 
 .link a:hover{
