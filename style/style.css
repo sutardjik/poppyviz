@@ -37,8 +37,12 @@ a:hover{
   cursor: alias;
 }
 
+.link a{
+  color: #B3CEE5 !important;
+}
+
 .link a:hover{
-  background: #DCFF93;
+  background: #B5E5B3;
   color: #363845 !important;
   text-decoration: none;
 }
