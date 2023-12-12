@@ -8,7 +8,7 @@ import folium
 
 def set_favicon():
     favicon_path = "./favicon.ico"
-    st.set_page_config(page_title="PopPyraViz", page_icon=favicon_path)
+    st.set_page_config(page_title="PanPop", page_icon=favicon_path)
 
 
 set_favicon()
@@ -23,7 +23,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 st.markdown(
-    "<h1 style='text-align: center;'>PopPyraViz</h1>",
+    "<h1 style='text-align: center;'>PanPop</h1>",
     unsafe_allow_html=True,
 )
 
@@ -251,7 +251,7 @@ st.markdown(
 
 st.sidebar.write(
     f"""<h1 style="font-weight: 300">Preface</h1><p class="link">
-    PopPyraViz presents the population trends of six countries—the USA, Brazil, Germany, Kenya, India, and Japan—with population pyramids illustrated across 70 years. The annual population growth of the six countries from the same year interval is featured as line graphs. The population pyramids and population growth data are shown as interactive dataframes that can be downloaded as Excel spreadsheets and queried by column name. The annual population growth of the six countries is expressed as a multiple-line graph with the data displayed in an interactive dataframe, all examined in the <a href="/COUNTRY_COMPARISON" target="_self">Country Comparison</a> section.</p>
+    PanPop presents the population trends of six countries—the USA, Brazil, Germany, Kenya, India, and Japan—with population pyramids illustrated across 70 years. The annual population growth of the six countries from the same year interval is featured as line graphs. The population pyramids and population growth data are shown as interactive dataframes that can be downloaded as Excel spreadsheets and queried by column name. The annual population growth of the six countries is expressed as a multiple-line graph with the data displayed in an interactive dataframe, all examined in the <a href="/COUNTRY_COMPARISON" target="_self">Country Comparison</a> section.</p>
     """,
     unsafe_allow_html=True,
 )
