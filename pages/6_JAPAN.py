@@ -57,6 +57,7 @@ yr = df["Year"] == year
 y = df[yr]["Age Group"]
 x1 = df[yr]["Male Population"] * -1
 x2 = df[yr]["Female Population"]
+
 fig = go.Figure()
 fig.add_trace(
     go.Bar(
@@ -71,6 +72,7 @@ fig.add_trace(
         ),
     )
 )
+
 fig.add_trace(
     go.Bar(
         y=y,
@@ -84,6 +86,7 @@ fig.add_trace(
         ),
     )
 )
+
 fig.add_trace(
     go.Scatter(
         y=y,
@@ -95,6 +98,7 @@ fig.add_trace(
         marker_size=8,
     )
 )
+
 fig.add_trace(
     go.Scatter(
         y=y,
@@ -106,6 +110,7 @@ fig.add_trace(
         marker_size=8,
     )
 )
+
 fig.update_layout(
     margin=dict(
         l=0,
@@ -144,7 +149,9 @@ fig.update_layout(
     bargroupgap=0,
     font=dict(family="adelle-sans"),
 )
+
 st.plotly_chart(fig)
+
 st.markdown(
     f"""<p style='text-align:center;'><a href="https://www.populationpyramid.net/japan/{year}/" target="_blank">View Data Source From {year}</a></p>""",
     unsafe_allow_html=True,
@@ -156,6 +163,7 @@ st.markdown(
     "<h4>Japan’s Annual Population Growth Line Graph</h4>",
     unsafe_allow_html=True,
 )
+
 fig1 = px.line(
     df1,
     x="Year",
@@ -163,6 +171,7 @@ fig1 = px.line(
     title="Annual Population Growth of Japan (1950 – 2020)",
     markers=True,
 )
+
 fig1.update_layout(
     font_family="sans-serif",
     title_font_family="adelle-sans",
@@ -170,6 +179,7 @@ fig1.update_layout(
     font=dict(family="adelle-sans"),
     yaxis_title="Population (Millions)",
 )
+
 st.plotly_chart(fig1)
 
 st.write("---")
@@ -178,14 +188,17 @@ st.markdown(
     "<h4>Japan’s Population Pyramid Data (1950 – 2020)</h4>",
     unsafe_allow_html=True,
 )
+
 filtered_df = dataframe_explorer(df)
 s = filtered_df.style.format({"Year": lambda x: "{:.0f}".format(x)})
 st.dataframe(s, use_container_width=True)
 
 col1, col2, col3 = st.columns(3)
 buffer = io.BytesIO()
+
 with col1:
     pass
+
 with col2:
     with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
         df.to_excel(writer, sheet_name="Japan-Pyramid-1950-2020")
@@ -198,6 +211,7 @@ with col2:
         )
     buffer.flush()
     buffer.close()
+
 with col3:
     pass
 
@@ -207,14 +221,17 @@ st.markdown(
     "<h4>Japan’s Annual Population Growth Data (1950 – 2020)</h4>",
     unsafe_allow_html=True,
 )
+
 filtered_df1 = dataframe_explorer(df1)
 s1 = filtered_df1.style.format({"Year": lambda x: "{:.0f}".format(x)})
 st.dataframe(s1, use_container_width=True)
 
 col1, col2, col3 = st.columns(3)
 buffer = io.BytesIO()
+
 with col1:
     pass
+
 with col2:
     with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
         df1.to_excel(writer, sheet_name="Japan-Growth-1950-2020")
@@ -227,6 +244,7 @@ with col2:
         )
     buffer.flush()
     buffer.close()
+
 with col3:
     pass
 

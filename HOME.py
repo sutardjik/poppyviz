@@ -33,7 +33,9 @@ st.markdown(
     "<p style='text-align: center;'>Explores the population trends of six countries from 1950 to 2020 through population pyramids and annual population growth line graphs.</p>",
     unsafe_allow_html=True,
 )
+
 add_vertical_space(1)
+
 m = folium.Map(location=[35, 45], tiles="OpenStreetMap", zoom_start=1.5)
 data = pd.DataFrame(
     {
@@ -143,6 +145,7 @@ with col1:
         """<h5><em><a href="/USA" target="_self">USA</a></em> // Stage 4 – Low Stationary</h5>""",
         unsafe_allow_html=True,
     )
+
 with col2:
     st.pydeck_chart(
         pdk.Deck(
@@ -170,6 +173,7 @@ with col1:
         """<h5><em><a href="/GERMANY" target="_self">Germany</a></em> // Stage  5 – Declining</h5>""",
         unsafe_allow_html=True,
     )
+
 with col2:
     st.pydeck_chart(
         pdk.Deck(
@@ -197,6 +201,7 @@ with col1:
         """<h5><em><a href="/INDIA" target="_self">India</a></em> // Stage 3 – Late Expanding</h5>""",
         unsafe_allow_html=True,
     )
+
 with col2:
     st.pydeck_chart(
         pdk.Deck(

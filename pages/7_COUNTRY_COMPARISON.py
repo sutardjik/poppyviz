@@ -41,6 +41,7 @@ st.markdown(
     "<h4>Six Countries’ Annual Population Growth Multiple-Line Graph</h4>",
     unsafe_allow_html=True,
 )
+
 fig = px.line(
     df,
     x="Year",
@@ -50,6 +51,7 @@ fig = px.line(
     markers=True,
     height=700,
 )
+
 fig.update_layout(
     font_family="sans-serif",
     title_font_family="adelle-sans",
@@ -57,6 +59,7 @@ fig.update_layout(
     font=dict(family="adelle-sans"),
     yaxis_title="Population (Billions)",
 )
+
 st.plotly_chart(fig)
 
 st.markdown(
@@ -72,24 +75,29 @@ st.markdown(
 )
 
 add_vertical_space(1)
+
 st.markdown(
     "<p>An overview of observations in the trends of the multiple-line graph is included in the left sidebar.</p>",
     unsafe_allow_html=True,
 )
+
 st.write("---")
 
 st.markdown(
     "<h4>Six Countries’ Annual Population Growth Data (1950 – 2020)</h4>",
     unsafe_allow_html=True,
 )
+
 filtered_df = dataframe_explorer(df)
 s = filtered_df.style.format({"Year": lambda x: "{:.0f}".format(x)})
 st.dataframe(s, use_container_width=True)
 
 col1, col2, col3 = st.columns(3)
 buffer = io.BytesIO()
+
 with col1:
     pass
+
 with col2:
     with pd.ExcelWriter(buffer, engine="xlsxwriter") as writer:
         df.to_excel(writer, sheet_name="6-Growth-1950-2020")
@@ -102,6 +110,7 @@ with col2:
         )
     buffer.flush()
     buffer.close()
+
 with col3:
     pass
 

@@ -1,6 +1,6 @@
 # PanPop
 
-An interactive website using the Streamlit framework that visualizes the population trends of six countries from 1950 to 2020 using population pyramids and annual growth line graphs. It offers users an engaging and informative way to explore demographic changes, providing interactive sliders for specific years and access to linked data sources for additional context.
+An interactive web app using the Streamlit framework that visualizes the population trends of six countries from 1950 to 2020 using population pyramids and annual growth line graphs. PanPop explores demographic changes, providing interactive sliders for specific years and access to linked data sources for additional context.
 
 ## Home
 
@@ -9,8 +9,6 @@ An interactive website using the Streamlit framework that visualizes the populat
     - Hover on capital to view name
     - Click on capital to see geographic coordinates
 - Individual Mapbox displays for each country
-- Click on country name to access its page
-- View complete list of pages and web app's outlined features through sidebar
 
 ## Countries
 
@@ -21,13 +19,11 @@ An interactive website using the Streamlit framework that visualizes the populat
   - Data used to create pyramids and line graphs
     - Query by column name
     - Download as Excel spreadsheet
-- Sidebar displays description of trend observations
 
 ## Country Comparison
 
 - Annual population growth multiple-line graph for all six countries
   - Line trace can be excluded through single/double-click
-- Sidebar displays description of trend observations
 
 ## Dependencies
 
