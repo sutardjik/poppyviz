@@ -50,12 +50,12 @@ data = pd.DataFrame(
             "Tokyo",
         ],
         "desc": [
-            "USA’s Capital: 38.9072° N, 77.0369° W",
-            "Brazil’s Capital: 15.7975° S, 47.8919° W",
-            "Germany’s Capital: 52.5200° N, 13.4050° E",
-            "Kenya’s Capital: 1.2921° S, 36.8219° E",
-            "India’s Capital: 28.6139° N, 77.2090° E",
-            "Japan’s Capital: 35.6762° N, 139.6503° E",
+            "38.9072° N, 77.0369° W (USA)",
+            "15.7975° S, 47.8919° W (Brazil)",
+            "52.5200° N, 13.4050° E (Germany)",
+            "1.2921° S, 36.8219° E (Kenya)",
+            "28.6139° N, 77.2090° E (India)",
+            "35.6762° N, 139.6503° E (Japan)",
         ],
     },
     dtype=str,
@@ -218,7 +218,7 @@ with col2:
 
 add_vertical_space(1)
 st.write("---")
-add_vertical_space(1)
+add_vertical_space(2)
 
 st.markdown(
     f"""<p class="link" style='text-align:center;'>Built by <a href="https://sutardjik.github.io/" target="_blank">&#x4b;&#x61;&#x72;&#x65;&#x6e;
