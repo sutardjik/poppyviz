@@ -54,9 +54,9 @@ fig = px.line(
 
 fig.update_layout(
     font_family="sans-serif",
-    title_font_family="adelle-sans",
+    title_font_family="FRAGMENT",
     title_font_size=16,
-    font=dict(family="adelle-sans"),
+    font=dict(family="FRAGMENT"),
     yaxis_title="Population (Billions)",
 )
 
@@ -81,7 +81,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+add_vertical_space(1)
 st.write("---")
+add_vertical_space(1)
 
 st.markdown(
     "<h4>Six Countries’ Annual Population Growth Data (1950 – 2020)</h4>",
@@ -114,9 +116,9 @@ with col2:
 with col3:
     pass
 
-st.write("---")
-
 add_vertical_space(1)
+st.write("---")
+add_vertical_space(2)
 
 st.markdown(
     "<sup>5 </sup>“Population of Japan 2009,” PopulationPyramid.net, accessed February 17, 2023, https://www.populationpyramid.net/japan/2009/.",

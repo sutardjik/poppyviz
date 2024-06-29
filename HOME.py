@@ -127,9 +127,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.write("---")
-
 add_vertical_space(1)
+st.write("---")
+add_vertical_space(2)
 
 col1, col2 = st.columns(2)
 with col1:
@@ -216,8 +216,8 @@ with col2:
         unsafe_allow_html=True,
     )
 
+add_vertical_space(1)
 st.write("---")
-
 add_vertical_space(1)
 
 st.markdown(

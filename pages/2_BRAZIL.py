@@ -162,7 +162,7 @@ fig.update_layout(
     barmode="relative",
     bargap=0,
     bargroupgap=0,
-    font=dict(family="adelle-sans"),
+    font=dict(family="FRAGMENT"),
 )
 
 st.plotly_chart(fig)
@@ -172,7 +172,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+add_vertical_space(1)
 st.write("---")
+add_vertical_space(1)
 
 st.markdown(
     "<h4>Brazil’s Annual Population Growth Line Graph</h4>",
@@ -189,15 +191,16 @@ fig1 = px.line(
 
 fig1.update_layout(
     font_family="sans-serif",
-    title_font_family="adelle-sans",
+    title_font_family="FRAGMENT",
     title_font_size=16,
-    font=dict(family="adelle-sans"),
+    font=dict(family="FRAGMENT"),
     yaxis_title="Population (Millions)",
 )
 
 st.plotly_chart(fig1)
 
 st.write("---")
+add_vertical_space(1)
 
 st.markdown(
     "<h4>Brazil’s Population Pyramid Data (1950 – 2020)</h4>",
@@ -230,7 +233,9 @@ with col2:
 with col3:
     pass
 
+add_vertical_space(1)
 st.write("---")
+add_vertical_space(1)
 
 st.markdown(
     "<h4>Brazil’s Annual Population Growth Data (1950 – 2020)</h4>",

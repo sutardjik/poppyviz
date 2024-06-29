@@ -1,4 +1,17 @@
-@import url('https://use.typekit.net/tsb3vax.css');
+@font-face {
+  font-family: ES;
+  src: url('https://pangrampangram.com/cdn/shop/files/PPEditorialSans-Variable.woff2?v=16426226129273720611') format('woff2');
+}
+
+@font-face {
+  font-family: FRAGMENT;
+  src: url('https://pangrampangram.com/cdn/shop/files/PPFragment-SansVariable.woff?v=839309826556575823') format('woff2');
+}
+
+@font-face {
+  font-family: MONUMENT;
+  src: url('https://pangrampangram.com/cdn/shop/files/PPMonumentExtended-Variable.woff?v=15700662107851491778') format('woff2');
+}
 
 * {
   cursor: default;
@@ -9,19 +22,24 @@
   color: #363845;
 }
 
-h1, h4, h5 {
-  font-family: ivypresto-display, serif;
+h1{
+  font-family: ES, serif;
   font-weight: 300;
 }
 
+h4, h5 {
+  font-family: ES, serif;
+  font-weight: 200;
+}
+
 p {
-  font-family: adelle-sans, sans-serif;
-  font-weight: 400;
+  font-family: FRAGMENT, sans-serif;
+  font-weight: 310;
 }
 
 body {
-  font-family: acumin-pro-wide, sans-serif;
-  font-weight: 600;
+  font-family: MONUMENT, sans-serif;
+  font-weight: 350;
 }
 
 a {
