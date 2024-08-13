@@ -4,10 +4,7 @@ An interactive web app using the Streamlit framework that visualizes the populat
 
 ## Home
 
-- Folium (OpenStreetMap)
-  - Pinned locations of countries' capitals
-    - Hover on capital to view name
-    - Click on capital to see geographic coordinates
+- Folium (OpenStreetMap) with capitals of featured countries
 - Individual Mapbox displays for each country
 
 ## Countries
@@ -27,13 +24,11 @@ An interactive web app using the Streamlit framework that visualizes the populat
 
 ## Dependencies
 
-- [Pandas](https://pandas.pydata.org/) (version 1.5.3): a powerful data manipulation and analysis library for rendering interactive dataframes
-- [Plotly](https://plotly.com/python/) (version 5.13.0): a flexible and interactive visualization library, including Plotly Express for high-level visualizations
-- [XlsxWriter](https://xlsxwriter.readthedocs.io/) (version 3.0.8): a Python library for creating Excel files
+- [Pandas](https://pandas.pydata.org/): a powerful data manipulation and analysis library for rendering interactive dataframes
+- [Plotly](https://plotly.com/python/): a flexible and interactive visualization library, including Plotly Express for high-level visualizations
+- [XlsxWriter](https://xlsxwriter.readthedocs.io/): a Python library for creating Excel files
 - [Pydeck](https://github.com/visgl/deck.gl/): a Python library for rendering Mapbox maps and creating interactive 3D visualizations
-- [Folium](https://python-visualization.github.io/folium/) (version 0.14.0): a Python library for creating leaflet.js maps
-
-For more information and documentation about these libraries, please refer to their respective websites or official documentation.
+- [Folium](https://python-visualization.github.io/folium/): a Python library for creating leaflet.js maps
 
 ## Development
 

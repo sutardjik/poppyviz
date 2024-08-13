@@ -36,45 +36,42 @@ st.markdown(
 
 add_vertical_space(1)
 
-m = folium.Map(location=[35, 45], tiles="OpenStreetMap", zoom_start=1.5)
+m = folium.Map(
+    location=[35, 45],
+    tiles="OpenStreetMap",
+    zoom_start=1.5,
+)
+
 data = pd.DataFrame(
     {
         "lon": [-77.0369, -47.8919, 13.4050, 36.8219, 77.2090, 139.6503],
         "lat": [38.9072, -15.7975, 52.5200, -1.2921, 28.6139, 35.6762],
         "name": [
-            "Washington D.C.",
-            "Brasília",
-            "Berlin",
-            "Nairobi",
-            "New Delhi",
-            "Tokyo",
+            "Washington D.C., USA",
+            "Brasília, Brazil",
+            "Berlin, Germany",
+            "Nairobi, Kenya",
+            "New Delhi, India",
+            "Tokyo, Japan",
         ],
-        "desc": [
-            "38.9072° N, 77.0369° W (USA)",
-            "15.7975° S, 47.8919° W (Brazil)",
-            "52.5200° N, 13.4050° E (Germany)",
-            "1.2921° S, 36.8219° E (Kenya)",
-            "28.6139° N, 77.2090° E (India)",
-            "35.6762° N, 139.6503° E (Japan)",
-        ],
-    },
-    dtype=str,
+    }
 )
 
 for i in range(0, len(data)):
-    folium.Marker(
+    folium.CircleMarker(
         location=[data.iloc[i]["lat"], data.iloc[i]["lon"]],
-        popup=data.iloc[i]["desc"],
-        tooltip=data.iloc[i]["name"],
+        radius=10,
+        popup=data.iloc[i]["name"],
+        fill_color="#FF0000",
+        color=None,
     ).add_to(m)
+
 st_data = st_folium(m, height=400, width=800)
 
 st.markdown(
     "<p>The above map includes the pinned capitals of the USA, Brazil, Germany, Kenya, India, and Japan. Hover over the capitals to view their names, and click on them to see their geographic coordinates.</p>",
     unsafe_allow_html=True,
 )
-
-add_vertical_space(1)
 
 st.markdown(
     "Population pyramids graphically illustrate the age and gender distribution of a given population using a bar chart graphic to display the number or percentages of males and females in each age group. Population pyramids provide a clear picture of a population’s age-gender composition and can also be used to display future trends in a population.<sup>1</sup> The pyramid shapes alter and vary over time as countries encounter different population phases. They can be triangular, columnar, rectangular-shaped (with vertical sides rather than sloped), or have an irregular profile.<sup>2</sup>",
