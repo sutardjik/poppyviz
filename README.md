@@ -47,7 +47,7 @@ cd panpop
 pip install streamlit
 
 # check streamlit version
-streamlit version
+streamlit --version
 
 # upgrade streamlit version
 pip install --upgrade streamlit
