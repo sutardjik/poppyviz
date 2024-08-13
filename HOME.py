@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.add_vertical_space import add_vertical_space
 import pydeck as pdk
-from streamlit_folium import st_folium
 import folium
 from streamlit.components.v1 import html
 
@@ -67,26 +66,21 @@ for i in range(0, len(data)):
         color=None,
     ).add_to(m)
 
-
-# Save the map to an HTML string
 map_html = m._repr_html_()
 
-# Use st.components.v1.html to render the map
 html(
     f"""
     <style>
     .folium-map {{
-        height: 400px !important;
+        height: 450px !important;
         width: 700px !important;
     }}
     </style>
     {map_html}
     """,
-    height=400,
+    height=450,
     width=700,
 )
-
-add_vertical_space(1)
 
 st.markdown(
     "<p>The map above shows the pinned capitals of the USA, Brazil, Germany, Kenya, India, and Japan. Click on any circle to view the capital city of that country.</p>",
