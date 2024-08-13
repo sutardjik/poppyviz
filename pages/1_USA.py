@@ -8,7 +8,7 @@ import io
 
 
 def set_favicon():
-    favicon_path = "./favicon.ico"
+    favicon_path = "./img/favicon.ico"
     st.set_page_config(page_title="USA · PanPop", page_icon=favicon_path)
 
 

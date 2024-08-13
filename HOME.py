@@ -4,10 +4,11 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 import pydeck as pdk
 from streamlit_folium import st_folium
 import folium
+from streamlit.components.v1 import html
 
 
 def set_favicon():
-    favicon_path = "./favicon.ico"
+    favicon_path = "./img/favicon.ico"
     st.set_page_config(page_title="PanPop", page_icon=favicon_path)
 
 
@@ -37,7 +38,7 @@ st.markdown(
 add_vertical_space(1)
 
 m = folium.Map(
-    location=[35, 45],
+    location=[20, 30],
     tiles="OpenStreetMap",
     zoom_start=1.5,
 )
@@ -66,12 +67,33 @@ for i in range(0, len(data)):
         color=None,
     ).add_to(m)
 
-st_data = st_folium(m, height=400, width=800)
+
+# Save the map to an HTML string
+map_html = m._repr_html_()
+
+# Use st.components.v1.html to render the map
+html(
+    f"""
+    <style>
+    .folium-map {{
+        height: 400px !important;
+        width: 700px !important;
+    }}
+    </style>
+    {map_html}
+    """,
+    height=400,
+    width=700,
+)
+
+add_vertical_space(1)
 
 st.markdown(
-    "<p>The above map includes the pinned capitals of the USA, Brazil, Germany, Kenya, India, and Japan. Hover over the capitals to view their names, and click on them to see their geographic coordinates.</p>",
+    "<p>The map above shows the pinned capitals of the USA, Brazil, Germany, Kenya, India, and Japan. Click on any circle to view the capital city of that country.</p>",
     unsafe_allow_html=True,
 )
+
+add_vertical_space(1)
 
 st.markdown(
     "Population pyramids graphically illustrate the age and gender distribution of a given population using a bar chart graphic to display the number or percentages of males and females in each age group. Population pyramids provide a clear picture of a population’s age-gender composition and can also be used to display future trends in a population.<sup>1</sup> The pyramid shapes alter and vary over time as countries encounter different population phases. They can be triangular, columnar, rectangular-shaped (with vertical sides rather than sloped), or have an irregular profile.<sup>2</sup>",
