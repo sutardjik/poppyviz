@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: MONUMENT;
-  src: url('https://pangrampangram.com/cdn/shop/files/PPMonumentExtended-Variable.woff?v=15700662107851491778') format('woff2');
+  font-family: AGRANDIR;
+  src: url('https://pangrampangram.com/cdn/shop/files/PPAgrandirWide-Variable.ttf?v=18072277193860103240') format('woff2');
 }
 
 * {
@@ -38,8 +38,8 @@ p {
 }
 
 body {
-  font-family: MONUMENT, sans-serif;
-  font-weight: 350;
+  font-family: AGRANDIR, sans-serif;
+  font-weight: 340;
 }
 
 a {
