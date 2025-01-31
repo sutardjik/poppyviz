@@ -90,39 +90,39 @@ st.markdown(
 add_vertical_space(1)
 
 st.markdown(
-    "Population pyramids graphically illustrate the age and gender distribution of a given population using a bar chart graphic to display the number or percentages of males and females in each age group. Population pyramids provide a clear picture of a population’s age-gender composition and can also be used to display future trends in a population.<sup>1</sup> The pyramid shapes alter and vary over time as countries encounter different population phases. They can be triangular, columnar, rectangular-shaped (with vertical sides rather than sloped), or have an irregular profile.<sup>2</sup>",
+    "Population pyramids graphically illustrate the age and gender distribution of a given population using a bar chart graphic to display the number or percentages of males and females in each age group. Population pyramids provide a clear picture of a population’s age-gender composition and can also be used to display future trends in a population. The pyramid shapes alter and vary over time as countries encounter different population phases. They can be triangular, columnar, rectangular-shaped (with vertical sides rather than sloped), or have an irregular profile.",
     unsafe_allow_html=True,
 )
 
 add_vertical_space(1)
 
 st.markdown(
-    "The trend of a nation’s declining mortality and fertility resulting from social and economic progress is known as the Demographic Transition Model (DTM). The DTM is a five-stage population model that describes the demographic transition as high stationary, early expanding, late expanding, low stationary, and declining. Countries are categorized based on their industrial development and GDP into preindustrial societies, more economically developed countries (MEDCs), and less economically developed countries (LEDCs). MEDCs are industrialized nations with high GDPs, low poverty, and low population growth rates. Countries identified as LEDCs have low GDPs, high poverty, and high population growth rates.<sup>3</sup>",
+    "The trend of a nation’s declining mortality and fertility resulting from social and economic progress is known as the Demographic Transition Model (DTM). The DTM is a five-stage population model that describes the demographic transition as high stationary, early expanding, late expanding, low stationary, and declining. Countries are categorized based on their industrial development and GDP into preindustrial societies, more economically developed countries (MEDCs), and less economically developed countries (LEDCs). MEDCs are industrialized nations with high GDPs, low poverty, and low population growth rates. Countries identified as LEDCs have low GDPs, high poverty, and high population growth rates.",
     unsafe_allow_html=True,
 )
 
 st.markdown(
-    "<h4>Stage 1 – High Stationary</h4><p>High stationary is observed in preindustrial societies characterized by high birth rates due to the lack of birth control, high infant mortality rates, and cultural norms that support large families. Additionally, there are high fatality rates due to illness, starvation, inadequate hygiene, and lack of treatment.<sup>4</sup> Stage 1 pyramids have a broad base with concave sides.<sup>2</sup></p>",
+    "<h4>Stage 1 – High Stationary</h4><p>High stationary is observed in preindustrial societies characterized by high birth rates due to the lack of birth control, high infant mortality rates, and cultural norms that support large families. Additionally, there are high fatality rates due to illness, starvation, inadequate hygiene, and lack of treatment. Stage 1 pyramids have a broad base with concave sides.</p>",
     unsafe_allow_html=True,
 )
 
 st.markdown(
-    "<h4>Stage 2 – Early Expanding</h4><p>Early expanding generally describes LEDCs where birth rates are high, and death rates decline due to advancements in medicine and hygiene, leading to rapidly expanding populations.<sup>4</sup> Stage 2 pyramids have a broad base with straight sides, creating a pyramidal profile.<sup>2</sup></p>",
+    "<h4>Stage 2 – Early Expanding</h4><p>Early expanding generally describes LEDCs where birth rates are high, and death rates decline due to advancements in medicine and hygiene, leading to rapidly expanding populations. Stage 2 pyramids have a broad base with straight sides, creating a pyramidal profile.",
     unsafe_allow_html=True,
 )
 
 st.markdown(
-    "<h4>Stage 3 – Late Expanding</h4><p>Late expanding refers to wealthier LEDCs where birth and death rates continue to decline. As countries become more developed, contraception, improved healthcare, education, and the emancipation of women become more accessible. The rate of population increase slows down, and low infant mortality rates indicate the shift towards forming smaller families.<sup>4</sup> Stage 3 pyramids have convex sides with rounded edges, where the lower-middle portion slightly bulges out, making the pyramid dome-shaped or bell-shaped.<sup>2</sup></p>",
+    "<h4>Stage 3 – Late Expanding</h4><p>Late expanding refers to wealthier LEDCs where birth and death rates continue to decline. As countries become more developed, contraception, improved healthcare, education, and the emancipation of women become more accessible. The rate of population increase slows down, and low infant mortality rates indicate the shift towards forming smaller families. Stage 3 pyramids have convex sides with rounded edges, where the lower-middle portion slightly bulges out, making the pyramid dome-shaped or bell-shaped.</p>",
     unsafe_allow_html=True,
 )
 
 st.markdown(
-    "<h4>Stage 4 – Low Stationary</h4><p>Low stationary pertains to MEDCs characterized by stable population sizes due to low birth and death rates.<sup>4</sup> Stage 4 pyramids are barrel-shaped, with nearly vertical sides as the width of the pyramid bars remains the same from bottom to top.<sup>2</sup></p>",
+    "<h4>Stage 4 – Low Stationary</h4><p>Low stationary pertains to MEDCs characterized by stable population sizes due to low birth and death rates. Stage 4 pyramids are barrel-shaped, with nearly vertical sides as the width of the pyramid bars remains the same from bottom to top.</p>",
     unsafe_allow_html=True,
 )
 
 st.markdown(
-    "<h4>Stage 5 – Declining</h4><p>Declining is also observed in MEDCs where the country’s population decreases due to birth rates falling below death rates resulting from low fertility.<sup>4</sup> Stage 5 pyramids are urn-shaped, in which the pyramid inverts with a shrinking base and expanding top, indicating a high dependency on older adults.<sup>2</sup></p>",
+    "<h4>Stage 5 – Declining</h4><p>Declining is also observed in MEDCs where the country’s population decreases due to birth rates falling below death rates resulting from low fertility. Stage 5 pyramids are urn-shaped, in which the pyramid inverts with a shrinking base and expanding top, indicating a high dependency on older adults.</p>",
     unsafe_allow_html=True,
 )
 
@@ -236,34 +236,6 @@ add_vertical_space(2)
 st.markdown(
     f"""<p class="link" style='text-align:center;'>Built by <a href="https://sutardjik.github.io/" target="_blank">&#x4b;&#x61;&#x72;&#x65;&#x6e;
             &#x53;&#x75;&#x74;&#x61;&#x72;&#x64;&#x6a;&#x69;</a></p>""",
-    unsafe_allow_html=True,
-)
-
-add_vertical_space(1)
-
-st.markdown(
-    "<sup>1 </sup>“Tools of the Trade: POPULATION PYRAMIDS,” Pennsylvania Department of Health, accessed February 17, 2023, https://www.health.pa.gov/topics/HealthStatistics/Statistical-Resources/UnderstandingHealthStats/Documents/Population_Pyramids.pdf.",
-    unsafe_allow_html=True,
-)
-
-add_vertical_space(1)
-
-st.markdown(
-    "<sup>2 </sup>Jitender Saroha, “Types and Significance of Population Pyramids,” <em>World Wide Journal of Multidisciplinary Research and Development</em> 4, no. 4 (2018): 59-64. http://wwjmrd.com/upload/types-and-significance-of-population-pyramids_1523552342.pdf.",
-    unsafe_allow_html=True,
-)
-
-add_vertical_space(1)
-
-st.markdown(
-    "<sup>3 </sup>Jill Rutherford and Gillian Williams, “Human Population Dynamics,” in <em>Environmental Systems and Societies: Course Companion</em>&nbsp; (United Kingdom: Oxford University Press, 2015), 355, http://ionma.org/share/ess/essbookcomplete.pdf.",
-    unsafe_allow_html=True,
-)
-
-add_vertical_space(1)
-
-st.markdown(
-    "<sup>4 </sup>Rutherford and Williams, 364.",
     unsafe_allow_html=True,
 )
 
